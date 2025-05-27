@@ -1,0 +1,105 @@
+body {
+    overflow-x: hidden;
+    padding-top: 56px; /* Add padding to account for fixed navbar */
+}
+p,h2{
+    font-size: 25px !important;
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 10%;
+    background-color: #f8f9fa;
+    padding-top: 56px; /* Add padding to account for fixed navbar */
+}
+
+.main-wrapper {
+    width: 90%;
+    margin-top: 56px; /* Add margin to push content below the navbar */
+}
+
+.navbar {
+    width: 90%;
+    border-bottom: 10px solid rgb(56, 48, 112);
+    position: fixed; /* Make navbar fixed */
+    top: 0;
+    left: 0;
+    z-index: 1030; /* Ensure it's above other content */
+}
+
+.navbar-brand img {
+    width: 80px;
+}
+
+.logo {
+    width: 10%;
+    background-color: #2e6de7;
+    transition: all .5s ease;
+    height: 100vh; /* Full viewport height */
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1020; /* Below navbar but above other content */
+}
+
+.logo img {
+    width: 80px;
+    margin: 30px auto;
+    display: block;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:focus {
+    color: #2e6de7;
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #2e6de7;
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 991.98px) {
+    .sidebar {
+        width: 50px; /* Increased from 10px for better usability */
+    }
+    
+    .main-wrapper {
+        width: calc(100% - 50px);
+    }
+    
+    .navbar {
+        width: calc(100% - 50px); /* Adjust navbar width */
+    }
+    
+    .flex-direction-column {
+        flex-direction: column;
+    }
+    
+    .navtoggle {
+        position: fixed; /* Change to fixed */
+        top: 10px;
+        right: 60px; /* Adjust to account for sidebar */
+    }
+    
+    .logo {
+        width: 50px; /* Match sidebar width */
+    }
+    
+    .logo img {
+        display: none;
+    }
+}

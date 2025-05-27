@@ -1,0 +1,31 @@
+
+footer {
+    background-color: #f8f9fa;
+    padding: 50px 0 20px;
+}
+.footer-logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+.social-icons a {
+    color: #333;
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+.social-icons a:hover {
+    color: #0056b3;
+}
+.quick-links {
+    list-style-type: none;
+    padding-left: 0;
+}
+.quick-links a {
+    text-decoration: none;
+}
+.quick-links li {
+    margin-bottom: 10px;
+}
+.copyright {
+    background-color: #e9ecef;
+    padding: 15px 0;
+}
